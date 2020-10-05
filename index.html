@@ -14,13 +14,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/ico/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed bg-dark">
+    <header id="home">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
             <span class="navbar-brand mb-0 h1">r.d</span>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
                     <a class="nav-link" href="#">Features</a>
@@ -33,19 +34,19 @@
         </nav>
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h1 class="display-1">Robert Darku</h1>
-                <p class="lead text-monospace">Software Developer;</p>
-                <p class="lead text-monospace">Web Developer; <span class="blinker">_</span></p>
+                <h1 class="display-1 jumbo-text">Robert Darku</h1>
+                <p class="lead text-monospace jumbo-subText">Software Developer;</p>
+                <p class="lead text-monospace jumbo-subText">Web Developer; <span class="blinker">_</span></p>
             </div>
         </div>
     </header>
-    <section class="about container">
-        <h3 class="text-center">About Me</h3>
+    <section class="about container" id="about">
+        <h3 class="section-head">About Me</h3>
         <div class="row">
-            <div class="col-4">
-                <img src="" alt="" sizes="300,300" srcset="">
+            <div class="col-4 about-img">
+                <img src="https://images.unsplash.com/photo-1553798318-b911fffd0b08?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="profile-picture" width="300px">
             </div>
-            <div class="col-8">
+            <div class="col-8 about-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque fugit error quos a porro beatae qui eius
                 sed explicabo hic reprehenderit placeat atque, veniam nesciunt quisquam consequuntur, officia incidunt
                 laboriosam!
@@ -53,73 +54,127 @@
         </div>
     </section>
     <section class="skills">
-        <div class="container">
-            <h3 class="text-center">Some of my skills</h3>
+        <div class="container text-center">
+            <h3 class="section-head">Some of my skills</h3>
             <div class="row">
-                <div class="col-sm-12 col-md-4 col-lg-3">
-                    <span class="card-img fab fa-twitter-square fa-7x"></span>
-                    <p class="text-muted">twitter</p>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <span class="card-img fab fa-html5 fa-5x"></span>
+                    <p class="text-muted">Html 5</p>
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-3">
-                    <span class="card-img fab fa-twitter-square fa-7x"></span>
-                    <p class="text-muted">twitter</p>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <span class="card-img fab fa-css3 fa-5x"></span>
+                    <p class="text-muted">CSS 3</p>
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-3">
-                    <span class="card-img fab fa-twitter-square fa-7x"></span>
-                    <p class="text-muted">twitter</p>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <span class="card-img fab fa-bootstrap fa-5x"></span>
+                    <p class="text-muted">Bootstrap</p>
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-3">
-                    <span class="card-img fab fa-twitter-square fa-7x"></span>
-                    <p class="text-muted">twitter</p>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <span class="card-img fab fa-js-square fa-5x"></span>
+                    <p class="text-muted">Javascript</p>
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-3">
-                    <span class="card-img fab fa-twitter-square fa-7x"></span>
-                    <p class="text-muted">twitter</p>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <span class="card-img fab fa-node-js fa-5x"></span>
+                    <p class="text-muted">node</p>
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-3">
-                    <span class="card-img fab fa-twitter-square fa-7x"></span>
-                    <p class="text-muted">twitter</p>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <span class="card-img fab fa-npm fa-5x"></span>
+                    <p class="text-muted">npm</p>
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-3">
-                    <span class="card-img fab fa-twitter-square fa-7x"></span>
-                    <p class="text-muted">twitter</p>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <span class="card-img fab fa-react fa-5x"></span>
+                    <p class="text-muted">React</p>
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-3">
-                    <span class="card-img fab fa-twitter-square fa-7x"></span>
-                    <p class="text-muted">twitter</p>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <span class="card-img fas fa-database fa-5x"></span>
+                    <p class="text-muted">SQL</p>
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-3">
-                    <span class="card-img fab fa-twitter-square fa-7x"></span>
-                    <p class="text-muted">twitter</p>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <span class="card-img fas fa-code fa-5x"></span>
+                    <p class="text-muted">C#</p>
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-3">
-                    <span class="card-img fab fa-twitter-square fa-7x"></span>
-                    <p class="text-muted">twitter</p>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <span class="card-img fab fa-php fa-5x"></span>
+                    <p class="text-muted">php</p>
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-3">
-                    <span class="card-img fab fa-twitter-square fa-7x"></span>
-                    <p class="text-muted">twitter</p>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <span class="card-img fab fa-laravel fa-5x"></span>
+                    <p class="text-muted">Laravel</p>
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-3">
-                    <span class="card-img fab fa-twitter-square fa-7x"></span>
-                    <p class="text-muted">twitter</p>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <span class="card-img fab fa-git-square fa-5x"></span>
+                    <p class="text-muted">git</p>
                 </div>
             </div>
+            <small class="text-muted text-center m-5">The list above is not exhaustive</small>
         </div>
     </section>
     <section class="projects">
         <div class="container">
-            <h3 class="text-center">Some of my past work</h3>
-        </div>
-
-    </section>
-    <section class="contact">
-        <h3 class="text-center">Contact me</h3>
-        <div class="row">
-            <div class="col-md-4 col-sm-12">
-                div.card>
+            <h3 class="section-head">Portfolio</h3>
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <img src="..." alt="" class="card-img-top" width="200px;">
+                    <div class="card">
+                        <card-body>
+                            <h5 class="card-title">Portfolio item</h5>
+                        </card-body>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <img src="..." alt="" class="card-img-top">
+                    <div class="card">
+                        <card-body>
+                            <h5 class="card-title">Portfolio item</h5>
+                        </card-body>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <img src="..." alt="" class="card-img-top">
+                    <div class="card">
+                        <card-body>
+                            <h5 class="card-title">Portfolio item</h5>
+                        </card-body>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <img src="..." alt="" class="card-img-top">
+                    <div class="card">
+                        <card-body>
+                            <h5 class="card-title">Portfolio item</h5>
+                        </card-body>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <img src="..." alt="" class="card-img-top">
+                    <div class="card">
+                        <card-body>
+                            <h5 class="card-title">Portfolio item</h5>
+                        </card-body>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <img src="..." alt="" class="card-img-top">
+                    <div class="card">
+                        <card-body>
+                            <h5 class="card-title">Portfolio item</h5>
+                        </card-body>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <h3 class="section-head">Contact me</h3>
+            <form action="">
+                <input type="text" class="form-control" placeholder="Name" name="name"/>
+                <input type="email" class="form-control" placeholder="Email" name="email"/>
+                <textarea name="message" id="" cols="30" rows="10" class="form-control"></textarea>
+                <input type="submit" value="Submit" class="btn btn-block btn-dark">
+            </form>
+        </div>
+
     </section>
     <footer>
         <p>

@@ -1,0 +1,138 @@
+/* Header section */
+header {
+    color: white;
+    background-color: black;
+    font-family: Marvel, sans-serif;
+}
+
+.navbar-brand {
+    font-family: Marvel, sans-serif;
+}
+
+.jumbotron {
+    height: 100vh;
+    padding: 30vh;
+    background-color: rgb(52,58,64);
+}
+
+.jumbo-subText {
+    font-size: 2rem;
+}
+
+.blinker {
+    -webkit-animation: 1s blink ease infinite;
+    -moz-animation: 1s blink ease infinite;
+    -ms-animation: 1s blink ease infinite;
+    -o-animation: 1s blink ease infinite;
+    animation: 1s blink ease infinite;
+}
+
+@keyframes "blink" {
+
+    from,
+    to {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+
+    from,
+    to {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes "blink" {
+
+    from,
+    to {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes "blink" {
+
+    from,
+    to {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes "blink" {
+
+    from,
+    to {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+/* End Header section */
+
+section {
+    padding: 60px;
+}
+.section-head{
+    font-family: Marvel, sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* About section */
+
+.about-img {
+    width: 300px;
+}
+
+.about-text {
+    padding: 40px;
+}
+
+/* End about section */
+
+/* Skills section */
+
+.skills {
+    background-color: whitesmoke;
+}
+
+/* portfolio section */
+
+.card-img-top {
+    background-color: darkviolet;
+    height: 200px;
+}
+/* contact section */
+.contact{
+    background-color: darkslategray;
+}
+
+
+/* footer */
+
+footer{
+    background-color: darkslategray;
+    text-align: center;
+    padding: 30px 10px;
+    margin-bottom: 0;
+}
