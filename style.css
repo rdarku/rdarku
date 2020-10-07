@@ -3,6 +3,7 @@ header {
     color: white;
     background-color: black;
     font-family: Marvel, sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1569396116180-210c182bedb8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80");
 }
 
 .navbar-brand {
@@ -12,7 +13,11 @@ header {
 .jumbotron {
     height: 100vh;
     padding: 30vh;
-    background-color: rgb(52,58,64);
+    background-color: rgba(52,58,64,0.98);
+}
+
+.jumbo-text{
+    position: fixed;
 }
 
 .jumbo-subText {
@@ -90,7 +95,9 @@ header {
 /* End Header section */
 
 section {
+    position: relative;
     padding: 60px;
+    z-index: 12;
 }
 .section-head{
     font-family: Marvel, sans-serif;
@@ -106,6 +113,7 @@ section {
 
 .about-text {
     padding: 40px;
+    text-align: justify;
 }
 
 /* End about section */
@@ -125,17 +133,73 @@ section {
     background-color: darkviolet;
     height: 200px;
 }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #174755;
+    border-radius: 2px;
+  }
+
+  .card:hover .overlay {
+    opacity: .98;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+
 /* contact section */
 .contact{
-    background-color: darkslategray;
+    background-color: rgb(125, 145, 145);
+    background-image: url("./assets/btm-bg.jpg");
+}
+
+.form-box {
+    max-width: 600px;
+    padding: auto 100px;
+}
+
+input, textarea {
+    margin-bottom: 10px;
 }
 
 
 /* footer */
 
 footer{
-    background-color: darkslategray;
+    background-color: rgba(125, 145, 145,.9);
     text-align: center;
     padding: 30px 10px;
     margin-bottom: 0;
+    background-image: url("./assets/btm-bg.jpg");
+}
+
+.social-icon {
+    color: rgba(0, 0, 0, 0.5);
+}
+.social-icon:hover{
+    color:ivory;
+}
+.footer-text{
+    color: ivory;
 }

@@ -23,9 +23,11 @@
             <span class="navbar-brand mb-0 h1">r.d</span>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-link" href="#">Features</a>
-                    <a class="nav-link" href="#">Pricing</a>
+                    <!-- <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a> -->
+                    <a class="nav-link" href="#about">About Me</a>
+                    <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="#projects">Portfolio</a>
+                    <a class="nav-link" href="#contact">Contact Me</a>
                 </div>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -33,8 +35,8 @@
                     class="navbar-toggler-icon"></span></button>
         </nav>
         <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h1 class="display-1 jumbo-text">Robert Darku</h1>
+            <div class="container jumbo-text">
+                <h1 class="display-1">Robert Darku</h1>
                 <p class="lead text-monospace jumbo-subText">Software Developer;</p>
                 <p class="lead text-monospace jumbo-subText">Web Developer; <span class="blinker">_</span></p>
             </div>
@@ -43,17 +45,32 @@
     <section class="about container" id="about">
         <h3 class="section-head">About Me</h3>
         <div class="row">
-            <div class="col-4 about-img">
+            <div class="col-3 about-img">
                 <img src="./assets/profile-pic.png" alt="profile-picture" width="200px">
             </div>
-            <div class="col-8 about-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque fugit error quos a porro beatae qui eius
-                sed explicabo hic reprehenderit placeat atque, veniam nesciunt quisquam consequuntur, officia incidunt
-                laboriosam!
+            <div class="col-9 about-text">
+                <h4>Hi, I'm Robert. I know code.</h4> 
+                I have always wanted to say that. For a long time I have wanted to say that and mean it. Now I can.
+
+                <p>My journey to a coding carrier started back in school where .....</p>
+                <p>
+                    <a href="https://www.linkedin.com/in/robert-darku/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="https://github.com/rdarku" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <a href="https://twitter.com/rdarku" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-twitter-square fa-2x"></i>
+                    </a>
+                </p>
+                <p><a href="./assets/ROBERT_DARKU_Full-Stack_Dev.pdf" download="" class="btn btn-primary">
+                    <i class="fas fa-cloud-download-alt"></i> 
+                    Download a copy of my resume
+                </a></p>
             </div>
         </div>
     </section>
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="container text-center">
             <h3 class="section-head">Some of my skills</h3>
             <div class="row">
@@ -109,80 +126,167 @@
             <small class="text-muted text-center m-5">The list above is not exhaustive</small>
         </div>
     </section>
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="container">
             <h3 class="section-head">Portfolio</h3>
             <div class="row">
                 <div class="col-md-4 col-sm-12">
-                    <img src="..." alt="" class="card-img-top" width="200px;">
                     <div class="card">
-                        <card-body>
-                            <h5 class="card-title">Portfolio item</h5>
-                        </card-body>
+                        <img src="./assets/works/memorial-page.PNG" alt="" class="card-img-top" width="200px;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">In Memorium <i class="fab fa-github"></i> <i class="fas fa-globe-americas"></i></h5>
+                        </div>
+                        <div class="overlay">
+                            <span class="text">
+                                <a href="https://rdarku.github.io/demo-me/" target="_blank" 
+                                    rel="noopener noreferrer" class="btn btn-primary">
+                                    <i class="fas fa-code"></i> Visit site
+                                </a>
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
-                    <img src="..." alt="" class="card-img-top">
                     <div class="card">
-                        <card-body>
-                            <h5 class="card-title">Portfolio item</h5>
-                        </card-body>
+                        <img src="./assets/works/app-challenge.jpg" alt="" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Gold Badge Challenges <i class="fab fa-github"></i> <i class="fas fa-code"></i></h5>
+                        </div>
+                        <div class="overlay">
+                            <span class="text">
+                                <a href="https://github.com/rdarku/komodo-apps" target="_blank" 
+                                    rel="noopener noreferrer" class="btn btn-primary">
+                                    <i class="fas fa-code"></i> Visit github
+                                </a>
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
-                    <img src="..." alt="" class="card-img-top">
                     <div class="card">
-                        <card-body>
-                            <h5 class="card-title">Portfolio item</h5>
-                        </card-body>
+                        <img src="./assets/works/posam.PNG" alt="" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Loan app <i class="fab fa-bitbucket"></i> <i class="fas fa-globe-africa"></i></h5>
+                        </div>
+                        <div class="overlay">
+                            <span class="text">
+                                <a href="http://posamgroup.com/" target="_blank" 
+                                    rel="noopener noreferrer" class="btn btn-primary">
+                                    <i class="fas fa-globe-africa"></i> Visit site
+                                </a>
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
-                    <img src="..." alt="" class="card-img-top">
                     <div class="card">
-                        <card-body>
-                            <h5 class="card-title">Portfolio item</h5>
-                        </card-body>
+                        <img src="./assets/works/immigration-game.png" alt="" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Immigration Game <i class="fab fa-github"></i> <i class="fas fa-code"></i></h5>
+                        </div>
+                        <div class="overlay">
+                            <span class="text">
+                                <a href="https://github.com/rdarku/migration" target="_blank" 
+                                    rel="noopener noreferrer" class="btn btn-primary">
+                                    <i class="fas fa-code"></i> Visit github
+                                </a>
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
-                    <img src="..." alt="" class="card-img-top">
                     <div class="card">
-                        <card-body>
-                            <h5 class="card-title">Portfolio item</h5>
-                        </card-body>
+                        <img src="./assets/works/cycle-logo.jpg" alt="" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Cycle Disciple 
+                                <i class="fab fa-github"></i> <i class="fas fa-globe-americas"></i>
+                            </h5>
+                        </div>
+                        <div class="overlay">
+                            <span class="text">
+                                <a href="https://rdarku.github.io/cycleDisciple/" target="_blank" 
+                                    rel="noopener noreferrer" class="btn btn-primary">
+                                    <i class="fas fa-globe-americas"></i> Visit site
+                                </a>
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
-                    <img src="..." alt="" class="card-img-top">
                     <div class="card">
-                        <card-body>
-                            <h5 class="card-title">Portfolio item</h5>
-                        </card-body>
+                        <img src="./assets/works/css-check-in.PNG" alt="" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">CSS Check in <i class="fab fa-codepen"></i></h5>
+                        </div>
+                        <div class="overlay">
+                            <span class="text">
+                                <a href="https://codepen.io/rdarku/pen/vYGeKLj" target="_blank" 
+                                    rel="noopener noreferrer" class="btn btn-primary">
+                                    <i class="fab fa-codepen"></i> Visit codepen
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <img src="./assets/works/kanye-rest.PNG" alt="" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Kanye Quotes <i class="fab fa-codepen"></i></h5>
+                        </div>
+                        <div class="overlay">
+                            <span class="text">
+                                <a href="https://codepen.io/rdarku/pen/ExKLWYx" target="_blank" 
+                                    rel="noopener noreferrer" class="btn btn-primary">
+                                    <i class="fab fa-codepen"></i> Visit codepen
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <img src="./assets/MeSayHello.png" alt="" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Portfolio <i class="fab fa-github"></i></h5>
+                        </div>
+                        <div class="overlay">
+                            <span class="text">
+                                <a href="https://github.com/rdarku" target="_blank" 
+                                    rel="noopener noreferrer" class="btn btn-primary">
+                                    <i class="fab fa-codepen"></i> Visit github
+                                </a>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="contact">
-        <div class="container">
+    <section class="contact" id="contact">
+        <div class="container form-box">
             <h3 class="section-head">Contact me</h3>
             <form action="https://formspree.io/f/xeqpeaoy" method="POST">
-                <input type="text" class="form-control" placeholder="Name" name="name"/>
-                <input type="email" class="form-control" placeholder="Email" name="_replyto"/>
-                <textarea name="message" id="" cols="30" rows="10" class="form-control"></textarea>
+                <input type="text" class="form-control" placeholder="Name" name="name" required/>
+                <input type="email" class="form-control" placeholder="Email" name="_replyto" required/>
+                <textarea name="message" id="" cols="30" rows="10" class="form-control" required></textarea>
                 <input type="submit" value="Send" class="btn btn-block btn-dark">
             </form>
         </div>
 
     </section>
     <footer>
+        <p class="footer-text">&copy;2020&nbsp;&middot;&nbsp;Robert Darku</p>
         <p>
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-github"></i>
-            <i class="fab fa-twitter-square"></i>
+            <a href="https://www.linkedin.com/in/robert-darku/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin fa-2x social-icon"></i></a>
+            <a href="https://github.com/rdarku" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github fa-2x social-icon"></i>
+            </a>
+            <a href="https://twitter.com/rdarku" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter-square fa-2x social-icon"></i>
+            </a>
         </p>
-        <p>&copy;2020&nbsp;&middot;&nbsp;Robert Darku</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
