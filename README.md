@@ -1,6 +1,6 @@
 ### Hi there, I'm Robert 👋
 ___
-![Hi There](./assts/MeSayHello.png)
+<img src="/assets/MeSayHello.png">
 <!--
 **rdarku/rdarku** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
