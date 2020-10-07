@@ -116,6 +116,14 @@ section {
     text-align: justify;
 }
 
+.social-icons{
+    color: rgba(52,58,64,0.98);
+}
+
+.social-icons:hover{
+    color: rgba(76, 108, 139, 0.98);
+    text-decoration: none;
+}
 /* End about section */
 
 /* Skills section */
