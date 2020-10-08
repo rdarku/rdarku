@@ -12,12 +12,13 @@ header {
 
 .jumbotron {
     height: 100vh;
-    padding: 30vh;
+    padding: 5vw;
     background-color: rgba(52,58,64,0.98);
 }
 
 .jumbo-text{
     position: fixed;
+    margin: 35vh auto;
 }
 
 .jumbo-subText {
@@ -108,12 +109,14 @@ section {
 /* About section */
 
 .about-img {
-    width: 300px;
+    display: block;
+    margin: 20px auto !important;
 }
 
 .about-text {
+    width: 70%;
     padding: 40px;
-    text-align: justify;
+    margin: 10px auto;
 }
 
 .social-icons{
@@ -199,7 +202,9 @@ footer{
     text-align: center;
     padding: 30px 10px;
     margin-bottom: 0;
-    background-image: url("./assets/btm-bg.jpg");
+    background-image: url("./assets/btm-bg.jpg"); 
+    position: relative;
+    z-index: 50;
 }
 
 .social-icon {
@@ -210,4 +215,5 @@ footer{
 }
 .footer-text{
     color: ivory;
+   
 }
