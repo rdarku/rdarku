@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* Header section */
 header {
     color: white;
@@ -19,10 +23,11 @@ header {
 .jumbo-text{
     position: fixed;
     margin: 35vh auto;
+    font-size: calc(20vw - 1rem);
 }
 
 .jumbo-subText {
-    font-size: 2rem;
+    font-size: calc(1vw + 1rem);
 }
 
 .blinker {
@@ -114,7 +119,7 @@ section {
 }
 
 .about-text {
-    width: 70%;
+    width: 50%;
     padding: 40px;
     margin: 10px auto;
 }
@@ -167,7 +172,6 @@ section {
   .card:hover .overlay {
     opacity: .98;
   }
-  
   .text {
     color: white;
     font-size: 20px;
@@ -176,8 +180,29 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    text-align: center;
   }
 
+  .profile-picture{
+      display: block;
+      margin: 0 auto;
+      padding: 0;
+      width: 100%;
+      min-height: 60%;
+      background-image: linear-gradient(rgba(255,255,255,0.25),rgba(255,255,255,0.25)),
+      url("./assets/profile-pic2.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      transition: .5s ease;
+  }
+
+  .profile-picture:hover{
+    padding: 0;
+    min-height: 60%;
+    background-image: url("./assets/profile-pic2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 /* contact section */
 .contact{
@@ -194,6 +219,9 @@ input, textarea {
     margin-bottom: 10px;
 }
 
+a:hover{
+    text-decoration: none;
+}
 
 /* footer */
 
@@ -215,5 +243,24 @@ footer{
 }
 .footer-text{
     color: ivory;
-   
+}
+
+.skill-icon{
+    font-size: 7em;
+}
+
+.skill-icon:hover{
+    color: rgba(76, 108, 139, 0.98);
+}
+.skill-icon-az{
+    font-size: 5em;
+}
+
+.skill-icon-az:hover{
+    color: rgba(76, 108, 139, 0.98);
+}
+.up-arrow{
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
 }
